@@ -640,6 +640,63 @@ h1{
 
 
 
+/* ================= FOOTER ================= */
+
+.footer{
+  width: 100%;
+  background: rgba(0,0,0,.0.1);
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding: 10px 0 0;
+  margin-top: 70px;
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-brand{
+  display:flex;
+  justify-content:center;
+}
+
+.footer-logo{
+  height: 55px;
+}
+
+.footer-contact h4{
+  margin: 0 0 4px;
+  color: var(--accent2);
+}
+
+.footer-contact p{
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.footer-bottom{
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  background: rgba(0,0,0,.35); /* optional to match */
+}
+
+
+@media (max-width: 768px){
+  .footer-grid{
+    grid-template-columns: 1fr;
+    gap:0px;
+    text-align: center;
+  }
+}
+
 /* ---------- Large tablets / small laptops ---------- */
 @media (max-width: 1024px){
 
